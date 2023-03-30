@@ -16,7 +16,16 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
+		const money = 15	
+		$('#Money').text(money)
+		// $('#Money').html('<h1>300</h1>')
 
+
+		if (money >= 150) {
+			$('#Todo').text('我要去吃東西')
+		}else (
+			$('#Todo').text('只能吃土')
+		)
 	</script>
 </body>
 
