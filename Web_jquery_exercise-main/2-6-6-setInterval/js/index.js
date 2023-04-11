@@ -29,4 +29,9 @@ $slide.hover(function(){
 },function(){
 picIntercal = setInterval(setSlide , duration)
 })
-$paginatiomItems.click(finction)
+$paginationItems.click(function(){
+    index =$(this).index();
+    $slideImgInner.css('left',-index * 100 +'%');
+    $paginationItems
+    .eq(index).addClass(;)
+})
